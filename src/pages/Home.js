@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import UpcomingOutings from '../components/UpcomingOutings';
+import Introduction from '../components/introduction/introduction.js'
 
 var outingSummaries = [
   {"id":"1", "crew":"Christ Church M1", "subRequired":"cox", "date":"30 April 2017", "time":"2pm"},
@@ -15,7 +16,8 @@ class Home extends React.Component {
     return (
       <div>
         <Nav />
-        <UpcomingOutings outingSummaries={outingSummaries} />
+        <Introduction/>
+        {/*<UpcomingOutings outingSummaries={outingSummaries} />*/}
       </div>
     );
   }
