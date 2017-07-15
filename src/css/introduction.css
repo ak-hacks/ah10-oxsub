@@ -8,7 +8,12 @@
 }
 
 .oxsub-p {
-    color: #4d4d4d
+    color: #4d4d4d;
+}
+
+.oxsub-p-right {
+    color: #4d4d4d;
+    text-align: right;
 }
 
 .oxsub-button {
