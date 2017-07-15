@@ -1,0 +1,27 @@
+{
+  "name": "oxsub",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "auth0-js": "^8.6.0",
+    "auth0-lock": "^10.15.1",
+    "dotenv": "^4.0.0",
+    "jwt-decode": "^2.2.0",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-https-redirect": "^1.0.8",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

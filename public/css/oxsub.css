@@ -1,0 +1,43 @@
+.navbar-nav {
+  float: right;
+}
+
+.navbar-inverse {
+  background-color: #002147;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  background-color: #337ab7;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: #337ab7;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #0a406f;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.below-nav-div {
+  padding: 70px 15px;
+  text-align: center;
+}
