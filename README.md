@@ -1,6 +1,6 @@
 # OxSub
 The substitute rower marketplace for Oxford College Rowing      
-https://oxsub.herokuapp.com
+https://ah10-oxsub.herokuapp.com
 
 # Tech stack
 * [React](https://facebook.github.io/react/)
@@ -18,4 +18,4 @@ npm start
 
 # Production environment
 The app runs on the Heroku PaaS
-https://dashboard.heroku.com/apps/oxsub
+https://dashboard.heroku.com/apps/ah10-oxsub
