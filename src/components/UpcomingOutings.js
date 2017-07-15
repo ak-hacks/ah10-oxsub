@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fetch from 'react-fetch'
 
 class RequestSummary extends Component {
   render() {
@@ -23,27 +24,44 @@ class RequestSummary extends Component {
 
 class UpcomingOutings extends Component {
   render() {
-    var rows = [];
-    this.props.outingSummaries.forEach(function(outingSummary) {
-      rows.push(<RequestSummary outingSummary={outingSummary} key={outingSummary.id} />);
-    });
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="panel panel-default transparent-panel">
-              <div className="panel-heading">
-                <h3 className="panel-title oxsub-p">Upcoming Outings</h3>
-              </div>
-              <div className="panel-body">
-                {rows}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Fetch url="http://localhost:8080/outings">
+        <OutingsIterator/>
+      </Fetch>
     );
   }
+}
+
+class OutingsIterator extends React.Component{
+    render(){
+        let outings = this.props;
+        if (JSON.stringify(outings).length>2) {
+            console.log(outings);
+            var rows = [];
+            Object.keys(outings).map(function(key){
+              let outingSummary = outings[key];
+              rows.push(<RequestSummary outingSummary={outingSummary} key={outingSummary.uuid} />);
+            });
+        } else {
+          console.log("empty")
+        }
+        return (
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="panel panel-default transparent-panel">
+                    <div className="panel-heading">
+                      <h3 className="panel-title oxsub-p">Upcoming Outings</h3>
+                    </div>
+                    <div className="panel-body">
+                        {rows}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        );
+    }
 }
 
 export default UpcomingOutings

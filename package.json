@@ -11,6 +11,8 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
+    "react-fetch": "0.0.9",
+    "react-fetch-component": "^2.6.0",
     "react-https-redirect": "^1.0.8",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1"
