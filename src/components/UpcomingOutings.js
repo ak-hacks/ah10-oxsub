@@ -9,7 +9,7 @@ class RequestSummary extends Component {
           <div className="col-md-10">
             <div className="left-align oxsub-p">
               {this.props.outingSummary.crew} looking for a {this.props.outingSummary.subRequired} <br />
-              For an outing at {this.props.outingSummary.time} on {this.props.outingSummary.date}.
+              For an outing on {this.props.outingSummary.date}.
             </div>
           </div>
           <div className="col-md-2">
@@ -25,7 +25,7 @@ class RequestSummary extends Component {
 class UpcomingOutings extends Component {
   render() {
     return (
-      <Fetch url="http://localhost:8080/outings">
+      <Fetch url="https://oxsub-api.herokuapp.com/outings">
         <OutingsIterator/>
       </Fetch>
     );
