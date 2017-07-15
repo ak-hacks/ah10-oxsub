@@ -3,6 +3,11 @@
     color: #ff5500
 }
 
+.transparent-panel {
+    background: rgba(219, 218, 217, 0.8);
+
+}
+
 .oxsub-p {
     color: #4d4d4d
 }
@@ -10,4 +15,6 @@
 .oxsub-button {
     background-color: #ff5500;
     color: #ffffff;
+    width: 160px;
+    margin-top: 2px;
 }

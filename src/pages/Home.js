@@ -17,7 +17,7 @@ class Home extends React.Component {
       <div>
         <Nav />
         <Introduction/>
-        {/*<UpcomingOutings outingSummaries={outingSummaries} />*/}
+        <UpcomingOutings outingSummaries={outingSummaries} />
       </div>
     );
   }

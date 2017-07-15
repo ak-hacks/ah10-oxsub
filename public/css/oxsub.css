@@ -38,6 +38,9 @@ body {
 }
 
 .below-nav-div {
-  padding: 200px 100px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   text-align: center;
 }
