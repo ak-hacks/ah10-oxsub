@@ -19,3 +19,6 @@ npm start
 # Production environment
 The app runs on the Heroku PaaS
 https://dashboard.heroku.com/apps/ah10-oxsub
+
+The app is configured to use the following buildpack
+[https://github.com/mars/create-react-app-buildpack.git](https://github.com/mars/create-react-app-buildpack.git)
