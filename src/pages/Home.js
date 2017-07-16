@@ -5,6 +5,20 @@ import Introduction from '../components/introduction/introduction.js'
 
 class Home extends React.Component {
 
+  render() {
+    return (
+      <div>
+        <Nav />
+        <Introduction/>
+        <UpcomingOutings/>
+        <Modal />
+      </div>
+    );
+  }
+}
+
+class Modal extends React.Component {
+
   componentDidMount() {
     const queryString = require('query-string');
     const parsed = queryString.parse(location.search);
@@ -15,30 +29,25 @@ class Home extends React.Component {
   }
 
   render() {
-    return (
+    return(
       <div>
-        <Nav />
-        <Introduction/>
-        <UpcomingOutings/>
-        <button type="button" ref={button => this.buttonElement = button} data-toggle="modal" data-target="#myModal"></button>
+        <button type="button" ref={button => this.buttonElement = button} data-toggle="modal" data-target="#myModal" />
         <div className="modal fade" id="myModal" role="dialog">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 className="modal-title">Modal title</h4>
+                <h4 className="modal-title">All done!</h4>
               </div>
               <div className="modal-body">
-                <p>One fine body&hellip;</p>
+                <p>You should hear from a sub soon, if one is available.</p>
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     );
   }
