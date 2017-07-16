@@ -13,10 +13,13 @@ class RequestSummary extends Component {
             </div>
           </div>
           <div className="col-md-2">
-            <button type="button" className="btn btn-sm oxsub-button">Respond</button>
+            <button type="button" className="btn btn-sm oxsub-button" data-toggle="modal" data-target="#responseConfirmationModal">
+              Respond
+            </button>
           </div>
         </div>
         <hr />
+        <ResponseConfirmationModal />
       </div>
     );
   }
@@ -62,6 +65,36 @@ class OutingsIterator extends React.Component {
               </div>
               <div className="panel-body">
                 {rows}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+class ResponseConfirmationModal extends React.Component {
+
+  render() {
+    return(
+      <div>
+        <div className="modal fade" id="responseConfirmationModal" role="dialog">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 className="modal-title">Confirm your availability</h4>
+              </div>
+              <div className="modal-body">
+                <p>
+                  Once you confirm, the crew will been notified that you are available to sub. If they decide to take
+                  up your offer, they will get in touch via email.
+                </p>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" className="btn oxsub-button" data-dismiss="modal">Confirm</button>
               </div>
             </div>
           </div>
