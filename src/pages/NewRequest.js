@@ -47,6 +47,12 @@ class NewRequest extends React.Component {
               </div>
             </div>
             <div className="form-group">
+              <label className="col-sm-2 col-sm-offset-2 control-label">On</label>
+              <div className="col-sm-5">
+                <input type="datetime-local" className="form-control" name="date" id="date" />
+              </div>
+            </div>
+            <div className="form-group">
               <div className="col-sm-offset-2 col-sm-10">
                 <button type="submit" className="btn btn-default">Submit</button>
               </div>
