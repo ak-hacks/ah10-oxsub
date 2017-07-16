@@ -9,7 +9,7 @@ class NewRequest extends React.Component {
       <div>
         <Nav />
         <div className="below-nav-div container">
-          <form className="form-horizontal transparent-panel" method="POST" action="https://oxsub-api.herokuapp.com//find-a-sub">
+          <form className="form-horizontal transparent-panel" method="POST" action="https://oxsub-api.herokuapp.com/find-a-sub">
             <div className="form-group">
               <label className="col-sm-2 col-sm-offset-2 control-label">I am looking for</label>
               <div className="col-sm-5">
