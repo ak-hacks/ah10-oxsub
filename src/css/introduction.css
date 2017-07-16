@@ -1,6 +1,6 @@
 .introduction-rect {
     background: rgba(219, 218, 217, 0.8);
-    color: #ff5500
+    color: #d65408;
 }
 
 .transparent-panel {
@@ -18,7 +18,7 @@
 }
 
 .oxsub-button {
-    background-color: #ff5500;
+    background-color: #d65408;
     color: #ffffff;
     width: 160px;
     margin-top: 2px;
