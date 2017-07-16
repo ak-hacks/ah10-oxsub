@@ -8,8 +8,8 @@ class RequestSummary extends Component {
         <div className="row">
           <div className="col-md-10">
             <div className="left-align oxsub-p">
-              {this.props.outingSummary.crew} looking for a {this.props.outingSummary.subRequired} <br />
-              For an outing on {this.props.outingSummary.date}.
+              <b className="oxsub-orange-in-para">{this.props.outingSummary.crew}</b> looking for a {this.props.outingSummary.subRequired} <br />
+              For an outing on <strong>{this.props.outingSummary.date}</strong>.
             </div>
           </div>
           <div className="col-md-2">
