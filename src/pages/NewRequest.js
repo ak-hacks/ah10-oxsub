@@ -53,8 +53,8 @@ class NewRequest extends React.Component {
               </div>
             </div>
             <div className="form-group">
-              <div className="col-sm-offset-2 col-sm-10">
-                <button type="submit" className="btn btn-default">Submit</button>
+              <div className="col-sm-12">
+                <button type="submit" className="btn btn-lg oxsub-button">Submit</button>
               </div>
             </div>
           </form>
